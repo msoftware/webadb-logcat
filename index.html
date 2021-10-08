@@ -199,7 +199,7 @@ async function connect_usb()
 				console.log("ADB mode");
 				this.state("connected");
 				this.execute_cmd_clear("shell:logcat -c");
-				this.execute_cmd_log("shell:logcat com.trainio:F -v threadtime");
+				this.execute_cmd_log("shell:logcat");
 				this.stat_filename("/sdcard/Download/test_webadb.txt");
 				this.pull_filename("/sdcard/Download/test_webadb.txt");
 				this.push_dest("/sdcard/Download/test_webadb.txt");
